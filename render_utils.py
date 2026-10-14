@@ -20,7 +20,7 @@ def draw_arm(rl, pts, origin, scale):
     #end effector
     rl.draw_circle(int(sp[-1][0]), int(sp[-1][1]), 5, rl.GREEN)
 
-def draw_debug_info(rl, pts, lengths, angles, target, origin, scale, it, dist, max_iter, tol):
+def draw_debug_info(rl, lengths, angles, target, origin, scale, it, dist, max_iter, tol):
     # Accessible area
     total_length = sum(lengths)
     rl.draw_circle_lines(origin[0], origin[1], total_length * scale, rl.LIGHTGRAY)

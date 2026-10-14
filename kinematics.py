@@ -33,7 +33,8 @@ def ccd(base, length, angles, target, max_iter=20, tol=1e-3):   #Mengubah nilai 
             angles[i] = math.atan2(math.sin(angles[i]), math.cos(angles[i]))
 
         ex, ey = fk(base, length, angles)[-1]
-        if math.hypot(tx - ex, ty -ey) < tol :
-            break
+        dist = math.hypot(tx - ex, ty - ey)
+        if dist < tol:
+            return it, dist
     
-    return angles
+    return max_iter, dist

@@ -1,4 +1,4 @@
-# Inverse Kinematic with CCD Algorithm using pyray
+# Inverse Kinematic with CCD
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg) ![Version](https://img.shields.io/badge/Version-v1.0-orange.svg) ![Course](https://img.shields.io/badge/Course-Computer%20Animation-blueviolet)
 
